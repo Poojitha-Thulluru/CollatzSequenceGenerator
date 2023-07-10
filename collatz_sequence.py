@@ -2,9 +2,9 @@ def collatz_sequence(number):
     sequence = [number]  # Initialize the sequence with the starting number
 
     while number != 1:
-        if number % 2 == 0:  # If n is even
+        if number % 2 == 0:  # If number is even
             number = number // 2
-        else:  # If n is odd
+        else:  # If number is odd
             number = 3 * number + 1
 
         sequence.append(number)  # Add number to the sequence
