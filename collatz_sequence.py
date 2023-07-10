@@ -1,17 +1,16 @@
-def collatz_sequence(n):
-    sequence = [n]  # Initialize the sequence with the starting number
+def collatz_sequence(number):
+    sequence = [number]  # Initialize the sequence with the starting number
 
-    while n != 1:
-        if n % 2 == 0:  # If n is even
-            n = n // 2
+    while number != 1:
+        if number % 2 == 0:  # If n is even
+            number = number // 2
         else:  # If n is odd
-            n = 3 * n + 1
+            number = 3 * number + 1
 
-        sequence.append(n)  # Add n to the sequence
+        sequence.append(number)  # Add number to the sequence
 
     return sequence
 
-# Example usage:
 try:
     number = int(input("Enter a number: "))
     if number <= 0:
